@@ -1,0 +1,232 @@
+
+body {
+    margin: 0;
+    background-color: #ffffff;
+   
+}
+img {
+  box-shadow: 5px 5px 15px  #1c1c1c;
+}
+ 
+/* BAR  */
+
+  #navbar {
+    background-color: rgb(232, 232, 232);
+    position: fixed;
+    top: -100px;
+    width: 100%;
+    display:block;
+    transition: top 0.4s;
+    padding-right: 5px;
+  }
+  #navbar a {
+    float: left;
+    display: block;
+    color: #000000;
+    text-align: center;
+    padding: 2px;
+    text-decoration: none;
+    font-size: 20px;
+    min-width: 10%;
+    padding-top: 2%;
+    cursor: pointer;
+  }
+  #pho {
+    float: right; 
+    margin-right: 3%;
+    display: block;
+    color: #1c1c1c;
+    text-align: center;
+    padding: 5px;
+    text-decoration: none;
+    font-size: 20px;
+    padding-right: 10px;
+  }
+  #navbar a:hover {
+    /*background-color: rgb(241, 241, 241);*/
+    color: rgb(0, 0, 0);
+    padding-right: 10px;
+  }
+  .sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(232, 232, 232);
+    overflow-x: hidden;
+    transition: 0.8s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 18px 18px 8px 32px;
+    text-decoration: dashed;
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 35px;
+    color: #000000;
+    display: block;
+    transition: 0.3s;
+    width: 25%;
+    transition: 0.8s;
+}
+
+.sidenav a:hover {
+    text-shadow: 3px 3px 5px rgb(0, 0, 0);
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 5%;
+    font-size: 36px;
+    left: 90%;
+}
+
+.openbtn {
+ 
+}
+/*bodн  параллакс нужно надпись с уходом под хедар .но в нутрь. абсолют закидовает на хедар.
+        сейчас костыль надпись в цвет хедара поэтому не видно.   */
+
+.parallax {
+    
+    background-image: url("panoramic-view-of-the-roys-peak-in-new-zealand-with-low-mountains-in-the-distance-under-cloudscape.jpg");
+    min-height: 700px; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.paratext {
+    background-color:rgb(255, 255, 255);
+    font-size:36px;
+    margin: 10% 5% 10% 5%;
+}
+.parallax1 {
+    /* The image used */
+    background-image: url("veronica-porro-PooNq8s8mbo-unsplash.jpg");
+    height: 700px; 
+    
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/* проблемма  */
+  #nazvanie {
+ 
+    color: rgb(1, 1, 1);
+   position: absolute;
+    top: 2%;
+    left: 18%;
+    text-align: center;
+     
+}
+
+/* картинка и надпис. хочут прилипшуую картинку */
+#wrap {
+    height: 1000px;
+}
+.lipp {
+    width: 40%;
+    height: 400px;
+    margin: 0 5% 0 5%;
+    position: sticky;
+    top: 13%;
+  }
+  
+  .content {
+    float: right;
+    padding-top: 5%;
+    width: 40%;
+    margin: -1% 5% 0 5%;
+  }
+
+  /* сетка изоб*/
+ /* Создайте два одинаковых столбца, которые находятся рядом друг с другом */
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+    margin: 4% 5% 5% 5%;
+  }
+  .column {
+    flex: 30%;
+    padding: 0 5%;
+  }
+  .column img {
+    margin-top: 30px;
+    height: 550px;
+
+  }
+  .column2 {
+    flex: 30%;
+    padding: 130px 5%;
+  }
+  .column2 img {
+    margin-top: 30px;
+    height: 550px;
+  }
+ 
+  .block{
+    position:absolute;
+    left:0;
+    bottom:0;
+    right:0;
+    background:rgb(7, 7, 7);
+    padding:20px;
+    display:none;
+    font-size: larger;
+    }
+    #flash:hover .block{
+    display:block;
+    }
+/*команда  */
+.ccc {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2%;
+}
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  min-width: 300px;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+  font-family: arial;
+}
+
+.titlec {
+  color: grey;
+  font-size: 18px;
+}
+
+button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: rgb(0, 0, 0);
+  background-color: rgb(232, 232, 232);
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+.cardd a {
+  text-decoration: none;
+  font-size: 22px;
+  color: black;
+}
+button:hover, a:hover {
+  opacity: 0.7;
+}
+
+/* FOOTER */
+
+.linia {
+  margin: 3%;
+}
